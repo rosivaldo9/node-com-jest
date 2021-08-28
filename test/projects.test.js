@@ -4,7 +4,7 @@ const request = require('supertest');
 const app = require('../src/app');
 
 describe('projects', ()=>{
-    it('gg g h j   kkl ', async ()=>{
+    it('checks if project with Novo projeto as title and Diego as owner is created', async ()=>{
         const response = await request(app)
         .post('/projects')
         .send({
